@@ -99,6 +99,7 @@
       .text {
         color: #333d47;
         mso-line-height-rule:exactly;
+        line-height: 1.5625em;
         text-align: left;
         -webkit-text-size-adjust:none;
       }
@@ -128,52 +129,14 @@
     		padding-right:20px;
     		padding-bottom:40px;
     	}
-    	.body-padding-20-LR{
-    		padding-left:20px;
-    		padding-right:20px;
-    	}
     	.padding-top-25{
     		padding-top:25px;
     	}
-    	.header-text,.full-width-text,.divider,.text-image-right,.text-image-left,.three-photo-description{
-    		text-align:left;
-    		line-height:25px;
-    	}
-    	.header-text{
-    		color:#ff5000;
-    		font-weight:bold;
-    		font-size:20px;
-    	}
-    	.full-width-text,.divider,.text-image-right,.text-image-left,.three-photo-description{
-    		color:#333d47;
-    		font-weight:normal;
-    		font-size:16px;
-    	}
-    	.button table{
-    		background-color:#ff5000;
-    	}
-    	.button-text{
-    		font-size:16px;
-    		font-weight:normal;
-    		line-height:25px;
-    		text-align:center;
-    		mso-line-height-rule:exactly;
-    		-webkit-text-size-adjust:none;
-    		padding-top:5px;
-    		padding-right:30px;
-    		padding-bottom:5px;
-    		padding-left:30px;
-    	}
-    	.button-text a{
-    		color:#ffffff;
-    		font-weight:normal;
-    		text-decoration:none;
-    	}
-    	.divider{
-    		border-bottom-color:#d2d4d7;
-    		border-bottom-style:solid;
-    		border-bottom-width:1px;
-    	}
+      .hero-image {
+        height: 250px;
+        padding-top: 50px;
+        width: 600px;
+      }
     </style>
   </head>
 
@@ -213,25 +176,17 @@
             <td align="center" valign="top" id="body">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
 
-                <tr>
+                <tr mc:hideable>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td align="center" valign="top" class="text padding-top-25 header-text" mc:edit="headertext" mc:label="Header text">
-                          Type header here<br>
-                          Arial / type 20px / leading 25px
+                        <td align="center" valign="top" class="hero-image" mc:edit="hero-image">
+                          <img src="images/hero-image_600x250.png" alt="Hero image" border="0" width="600" height="250" />
                         </td>
                       </tr>
-                    </table>
-                  </td>
-                </tr>
-
-                <tr mc:repeatable="content" mc:variant="full-width-text">
-                  <td align="center" valign="top">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td align="center" valign="top" class="text padding-top-25 full-width-text" mc:label="Full-width text" mc:edit="fullwidthtext">
-                          <strong>Full-width text</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim. In egestas rutrum nisl, vitae imperdiet nibh. Duis in tincidunt ipsum. Vestibulum sagittis elementum sodales. Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.<br>
+                        <td align="center" valign="top" class="text padding-top-25"  mc:edit="hero-text">
+                          <strong>Hero story</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim. In egestas rutrum nisl, vitae imperdiet nibh. Duis in tincidunt ipsum. Vestibulum sagittis elementum sodales. Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.<br>
                           <br>
                           Quisque porttitor non mi nec scelerisque. Phasellus quis sem sed nibh ullamcorper consequat efficitur id nulla. Vivamus justo risus, maximus et dapibus eget, lacinia eu dolor. Sed vel tristique purus, ut hendrerit ligula. Phasellus quis ultrices magna. Vestibulum consequat tellus eu urna mattis, sed efficitur lacus eleifend. Pellentesque ultrices tortor ante, eget efficitur arcu semper at.
                         </td>
