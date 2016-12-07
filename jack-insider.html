@@ -173,20 +173,22 @@
         font-size: 0.875rem;
         padding-top: 10px;
       }
-      .work-item {
+      .work-item,
+      .press-item {
         padding-right: 10px;
         width: 295px;
       }
-      .work-item:last-child {
+      .work-item:last-child,
+      .press-item:last-child {
         padding-right: 0;
       }
-      .work-item__image img {
+      .work-item__image img,
+      .press-item__image img {
         height: 150px;
         width: 295px;
       }
-      .work-item__description {
-      }
-      .work-item__link {
+      .work-item__link,
+      .press-item__link {
         padding-top: 10px;
       }
     </style>
@@ -379,7 +381,84 @@
                       </tr>
                       <tr>
                         <td align="center" valign="top" class="more-link text padding-top-25">
-                          <a href="#" target="_blank">See more work on MyJack</a>
+                          <a href="http://myjack.jackmorton.com/marketing/casestudies.aspx" target="_blank">See more work on MyJack</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="section-header text padding-top-25">
+                          Press
+                        </td>
+                      </tr>
+                      <tr mc:repeatable>
+                        <td align="center" valign="top" class="press-item">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="press-item__image padding-top-25">
+                                <img src="images/press_295x150.png" alt="Work image" border="0" width="295" height="150" mc:edit="press-image_1" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="press-item__link text" mc:edit="press-link_1">
+                                <a href="#" target="_blank">Outlet: Headline</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="press-item__description text" mc:edit="press-description_1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="press-item">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="press-item__image padding-top-25">
+                                <img src="images/press_295x150.png" alt="Work image" border="0" width="295" height="150" mc:edit="press-image_2" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="press-item__link text" mc:edit="press-link_2">
+                                <a href="#" target="_blank">Outlet: Headline</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="press-item__description text" mc:edit="press-description_2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="more-header text padding-top-25">
+                          More press
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" class="text">
+                          <ul class="more-list" mc:edit="more-press">
+                            <li>[Subject] was featured in <a href="#" target="_blank">[Outlet Name]</a> for [Interesting Thing].</li>
+                            <li>[Subject] was featured in <a href="#" target="_blank">[Outlet Name]</a> for [Interesting Thing].</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" class="more-link text padding-top-25">
+                          <a href="http://www.jackmorton.com/news-coverage/" target="_blank">Read more press</a>
                         </td>
                       </tr>
                     </table>
