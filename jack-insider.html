@@ -70,54 +70,57 @@
       #bodyTable {
         background-color: #e7e8e9;
       }
-    	a{
-    		color:#ff5000;
-    		font-weight:bold;
-    		text-decoration:underline;
+    	a {
+    		color: #ff5000;
+    		font-weight: bold;
+    		text-decoration: underline;
     	}
-    	ol,ul{
-    		font-family:arial, sans-serif;
-    		font-size:1em;
-    		margin-top:0px;
-    		margin-bottom:0px;
-    		padding-top:0px;
-    		padding-bottom:0px;
-    		mso-line-height-rule:exactly;
+    	ol, ul {
+    		font-family: arial, sans-serif;
+    		font-size: 1em;
+    		margin-top: 0px;
+    		margin-bottom: 0px;
+    		padding-top: 0px;
+    		padding-bottom: 0px;
     	}
-    	ol ul,ul ol{
-    		margin-top:0px;
-    		margin-bottom:0px;
-    		padding-top:0px;
-    		padding-bottom:0px;
-    		mso-line-height-rule:exactly;
+    	ol ul, ul ol {
+    		margin-top: 0px;
+    		margin-bottom: 0px;
+    		padding-top: 0px;
+    		padding-bottom: 0px;
     	}
-    	#emailContainer td{
+    	#emailContainer td {
     		font-family:arial, helvetica, sans-serif;
     	}
-    	#preheader{
+    	#preheader {
     		padding-top:10px;
     		padding-bottom:15px;
     	}
-    	.preheader-text{
-    		color:#333d47;
-    		font-size:10px;
-    		line-height:15px;
-    		mso-line-height-rule:exactly;
-    		text-align:right;
-    		-webkit-text-size-adjust:none;
+      .text {
+        color: #333d47;
+        mso-line-height-rule:exactly;
+        text-align: left;
+        -webkit-text-size-adjust:none;
+      }
+    	.preheader {
+    		font-size: 10px;
+    		line-height: 1.5em;
+    		text-align: right;
     	}
-    	.preheader-text a{
-    		color:#333d47;
-    		font-weight:normal;
-    		text-decoration:underline;
+    	.preheader a {
+        color: #333d47;
+    		font-weight: normal;
+    		text-decoration: underline;
     	}
     	.header-image{
-    		background-color:#333d47;
-    		color:#ffffff;
-    		font-size:32px;
-    		font-weight:bold;
-    		line-height:25px;
-    		text-align:left;
+    		background-color: #ffffff;
+    		color: #ff5000;
+    		font-size: 30px;
+    		font-weight: bold;
+        height: 174px;
+    		line-height: 1em;
+        text-align: left;
+        width: 640px;
     	}
     	#body{
     		background-color:#ffffff;
@@ -131,10 +134,6 @@
     	}
     	.padding-top-25{
     		padding-top:25px;
-    	}
-    	.text{
-    		mso-line-height-rule:exactly;
-    		-webkit-text-size-adjust:none;
     	}
     	.header-text,.full-width-text,.divider,.text-image-right,.text-image-left,.three-photo-description{
     		text-align:left;
@@ -181,7 +180,7 @@
 <body bgcolor="#e7e8e9">
   <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
     <tr>
-      <td align="center" valign="top" style="padding-bottom: 40px;">
+      <td align="center" valign="top">
         <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" id="emailContainer">
 
           <!-- Content begins -->
@@ -189,7 +188,7 @@
             <td align="center" valign="top" id="preheader">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" class="preheader-text">
+                  <td align="center" valign="top" class="preheader text">
                     Month YYYY<br />
                     <a target="_blank" href="*|ARCHIVE|*">View email in a browser</a>
                   </td>
@@ -203,7 +202,7 @@
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
                   <td align="center" valign="top">
-                    <img src="#" alt="CEO Update" border="0" class="header-image" width="600" height="200" style="width:600px; height:200px;">
+                    <img src="images/header_640x174.png" alt="Jack Insider | The best of our agency delivered monthly " border="0" class="header-image" width="640" height="174">
                   </td>
                 </tr>
               </table>
@@ -211,32 +210,40 @@
           </tr>
 
           <tr>
-            <td align="center" valign="top">
+            <td align="center" valign="top" id="body">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
                 <tr>
-                  <td align="center" valign="top" class="text padding-top-25 header-text" mc:edit="headertext" mc:label="Header text">
-                    Type header here<br>
-                    Arial / type 20px / leading 25px
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="text padding-top-25 header-text" mc:edit="headertext" mc:label="Header text">
+                          Type header here<br>
+                          Arial / type 20px / leading 25px
+                        </td>
+                      </tr>
+                    </table>
                   </td>
                 </tr>
+
+                <tr mc:repeatable="content" mc:variant="full-width-text">
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="text padding-top-25 full-width-text" mc:label="Full-width text" mc:edit="fullwidthtext">
+                          <strong>Full-width text</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim. In egestas rutrum nisl, vitae imperdiet nibh. Duis in tincidunt ipsum. Vestibulum sagittis elementum sodales. Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.<br>
+                          <br>
+                          Quisque porttitor non mi nec scelerisque. Phasellus quis sem sed nibh ullamcorper consequat efficitur id nulla. Vivamus justo risus, maximus et dapibus eget, lacinia eu dolor. Sed vel tristique purus, ut hendrerit ligula. Phasellus quis ultrices magna. Vestibulum consequat tellus eu urna mattis, sed efficitur lacus eleifend. Pellentesque ultrices tortor ante, eget efficitur arcu semper at.
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+
               </table>
             </td>
           </tr>
-
-          <tr mc:repeatable="content" mc:variant="full-width-text">
-            <td align="center" valign="top">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="text padding-top-25 full-width-text" mc:label="Full-width text" mc:edit="fullwidthtext">
-                    <strong>Full-width text</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim. In egestas rutrum nisl, vitae imperdiet nibh. Duis in tincidunt ipsum. Vestibulum sagittis elementum sodales. Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.<br>
-                    <br>
-                    Quisque porttitor non mi nec scelerisque. Phasellus quis sem sed nibh ullamcorper consequat efficitur id nulla. Vivamus justo risus, maximus et dapibus eget, lacinia eu dolor. Sed vel tristique purus, ut hendrerit ligula. Phasellus quis ultrices magna. Vestibulum consequat tellus eu urna mattis, sed efficitur lacus eleifend. Pellentesque ultrices tortor ante, eget efficitur arcu semper at.
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
           <tr mc:repeatable="content" mc:variant="text-image-right-text">
             <td align="center" valign="top" class="padding-top-25">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
