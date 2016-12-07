@@ -174,21 +174,25 @@
         padding-top: 10px;
       }
       .work-item,
-      .press-item {
+      .press-item,
+      .resource-item {
         padding-right: 10px;
         width: 295px;
       }
       .work-item:last-child,
-      .press-item:last-child {
+      .press-item:last-child,
+      .resource-item:last-child {
         padding-right: 0;
       }
       .work-item__image img,
-      .press-item__image img {
+      .press-item__image img,
+      .resource-item__image img {
         height: 150px;
         width: 295px;
       }
       .work-item__link,
-      .press-item__link {
+      .press-item__link,
+      .resource-item__link {
         padding-top: 10px;
       }
     </style>
@@ -388,7 +392,7 @@
                   </td>
                 </tr>
 
-                <tr>
+                <tr mc:hideable>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
@@ -440,7 +444,7 @@
                   </td>
                 </tr>
 
-                <tr>
+                <tr mc:hideable>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
@@ -459,6 +463,73 @@
                       <tr>
                         <td align="center" valign="top" class="more-link text padding-top-25">
                           <a href="http://www.jackmorton.com/news-coverage/" target="_blank">Read more press</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr mc:hideable>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="section-header text padding-top-25">
+                          Resources
+                        </td>
+                      </tr>
+                      <tr mc:repeatable>
+                        <td align="center" valign="top" class="resource-item">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="resource-item__image padding-top-25">
+                                <img src="images/resource_295x150.png" alt="Work image" border="0" width="295" height="150" mc:edit="resource-image_1" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="resource-item__link text" mc:edit="resource-link_1">
+                                <a href="#" target="_blank">Resource name</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="resource-item__description text" mc:edit="resource-description_1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="resource-item">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="resource-item__image padding-top-25">
+                                <img src="images/resource_295x150.png" alt="Work image" border="0" width="295" height="150" mc:edit="resource-image_2" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="resource-item__link text" mc:edit="resource-link_2">
+                                <a href="#" target="_blank">Resource name</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="resource-item__description text" mc:edit="resource-description_2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr mc:hideable>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="text">
+                          <ul class="more-list padding-top-25" mc:edit="more-resources">
+                            <li><a href="#" target="_blank">[Resource Name]</a> [Resource Description].</li>
+                            <li><a href="#" target="_blank">[Resource Name]</a> [Resource Description].</li>
+                          </ul>
                         </td>
                       </tr>
                     </table>
