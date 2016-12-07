@@ -140,6 +140,15 @@
         font-size: 1.5rem;
         font-weight: bold;
       }
+      .more-header {
+        font-weight: bold;
+      }
+      .more-list {
+        padding-left: 20px;
+      }
+      .more-link {
+        text-align: right !important;
+      }
       .hero-image {
         padding-top: 50px;
       }
@@ -162,6 +171,22 @@
       }
       .win-description {
         font-size: 0.875rem;
+        padding-top: 10px;
+      }
+      .work-item {
+        padding-right: 10px;
+        width: 295px;
+      }
+      .work-item:last-child {
+        padding-right: 0;
+      }
+      .work-item__image img {
+        height: 150px;
+        width: 295px;
+      }
+      .work-item__description {
+      }
+      .work-item__link {
         padding-top: 10px;
       }
     </style>
@@ -278,6 +303,83 @@
                               </td>
                             </tr>
                           </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="section-header text padding-top-25">
+                          Featured work
+                        </td>
+                      </tr>
+                      <tr mc:repeatable>
+                        <td align="center" valign="top" class="work-item">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="work-item__image padding-top-25">
+                                <img src="images/work_295x150.png" alt="Work image" border="0" width="295" height="150" mc:edit="work-image_1" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="work-item__link text" mc:edit="work-link_1">
+                                <a href="#" target="_blank">Client: Project</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="work-item__description text" mc:edit="work-description_1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center" valign="top" class="work-item">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="work-item__image padding-top-25">
+                                <img src="images/work_295x150.png" alt="Work image" border="0" width="295" height="150" mc:edit="work-image_2" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="work-item__link text" mc:edit="work-link_2">
+                                <a href="#" target="_blank">Client: Project</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="work-item__description text" mc:edit="work-description_2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td align="center" valign="top" class="more-header text padding-top-25">
+                          More work
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" class="text">
+                          <ul class="more-list" mc:edit="more-work">
+                            <li>Jack [Office] created the <a href="#" target="_blank">[Project Name]</a> for [Client Name].</li>
+                            <li>Jack [Office] created the <a href="#" target="_blank">[Project Name]</a> for [Client Name].</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" class="more-link text padding-top-25">
+                          <a href="#" target="_blank">See more work on MyJack</a>
                         </td>
                       </tr>
                     </table>
