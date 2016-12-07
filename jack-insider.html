@@ -67,8 +67,8 @@
       User Styles
       ======================= */
 
-      #bodyTable {
-        background-color: #e7e8e9;
+      body {
+        font-size: 16px;
       }
     	a {
     		color: #ff5000;
@@ -89,8 +89,12 @@
     		padding-top: 0px;
     		padding-bottom: 0px;
     	}
+      #bodyTable {
+        background-color: #e7e8e9;
+      }
     	#emailContainer td {
     		font-family:arial, helvetica, sans-serif;
+        text-align: left;
     	}
     	#preheader {
     		padding-top:10px;
@@ -100,13 +104,12 @@
         color: #333d47;
         mso-line-height-rule:exactly;
         line-height: 1.5625em;
-        text-align: left;
         -webkit-text-size-adjust:none;
       }
     	.preheader {
     		font-size: 10px;
     		line-height: 1.5em;
-    		text-align: right;
+    		text-align: right !important;
     	}
     	.preheader a {
         color: #333d47;
@@ -132,10 +135,30 @@
     	.padding-top-25{
     		padding-top:25px;
     	}
+      .section-header {
+        color: #ff5000;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
       .hero-image {
         height: 250px;
         padding-top: 50px;
         width: 600px;
+      }
+      .wins-container > td {
+        padding-right: 9px;
+      }
+      .wins-container > td:last-child {
+        padding-right: 0;
+      }
+      .win-image {
+        height: 100px;
+        padding-top: 20px;
+        width: 194px;
+      }
+      .win-description {
+        font-size: 0.875rem;
+        padding-top: 10px;
       }
     </style>
   </head>
@@ -195,123 +218,68 @@
                   </td>
                 </tr>
 
-
-              </table>
-            </td>
-          </tr>
-          <tr mc:repeatable="content" mc:variant="text-image-right-text">
-            <td align="center" valign="top" class="padding-top-25">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="text text-image-right" mc:label="text-image-right" style="padding-right:18px;" mc:edit="textimageright">
-                    <strong>Text with image on right</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adip iscing elit. In sagittis tortor id metus rutrum, eu cons equat purus dignissim. In egestas rutrum nisl vitae imperdiet nibh. Duis in tincidunt ipsum. Sagittis elem entum sodales. Cras odio tortor, id tristique est metus bibendum vitae. Suspendisse in odio nisl. Quisque porttitor non mi nec scelerisque.
-                  </td>
-                  <td align="center" valign="top" style="width:188px;">
-                    <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/a124f899-b4d6-47fd-9055-36f7b59d0118.png" alt="" width="188" height="200" style="width:188px; height:200px;" mc:label="image-right" mc:edit="imageright">
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="text-image-left-text">
-            <td align="center" valign="top" class="padding-top-25">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" style="width:188px;">
-                    <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/a124f899-b4d6-47fd-9055-36f7b59d0118.png" alt="" width="188" height="200" style="width:188px; height:200px;" mc:label="image-left" mc:edit="imageleft">
-                  </td>
-                  <td align="center" valign="top" class="text text-image-left" mc:label="text-image-left" style="padding-left:18px;" mc:edit="textimageleft">
-                    <strong>Text with image on right</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adip iscing elit. In sagittis tortor id metus rutrum, eu cons equat purus dignissim. In egestas rutrum nisl vitae imperdiet nibh. Duis in tincidunt ipsum. Sagittis elem entum sodales. Cras odio tortor, id tristique est metus bibendum vitae. Suspendisse in odio nisl. Quisque porttitor non mi nec scelerisque.
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="divider">
-            <td align="center" valign="top" style="padding-left: 120px; padding-right: 120px;">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="text divider" mc:label="Divider">
-                    &nbsp;
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="full-width-image">
-            <td align="center" valign="top" class="padding-top-25">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" style="width:188px;">
-                    <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/f8f0d2ac-416a-4027-a79a-ff9528f4f834.png" alt="" width="600" height="320" style="width:600px; height:320px;" mc:label="full-width-image" mc:edit="fullwidthimage">
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="divider">
-            <td align="center" valign="top" style="padding-left: 120px; padding-right: 120px;">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" class="text divider" mc:label="Divider">
-                    &nbsp;
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <tr mc:repeatable="content" mc:variant="three-photos-with-description">
-            <td align="center" valign="top" class="padding-top-25">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td align="center" valign="top" style="width:188px; padding-right:10px;">
+                <tr mc:hideable>
+                  <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td align="center" valign="top" style="width:188px;">
-                          <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/a124f899-b4d6-47fd-9055-36f7b59d0118.png" alt="" width="188" height="200" style="width:188px; height:200px;" mc:label="three-photo-first" mc:edit="threephotofirst">
+                        <td align="center" valign="top" class="section-header text padding-top-25">
+                          Wins
                         </td>
                       </tr>
-                      <tr>
-                        <td align="center" valign="top" class="text padding-top-25 three-photo-description" mc:label="three-photo-description-1" mc:edit="threephotodescription1">
-                          <strong>Text left image</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim.
+                      <tr class="wins-container">
+                        <td align="center" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="win-image">
+                                <img src="images/win-logo_194x100.png" mc:edit="win-logo1" alt="Win logo" border="0" width="194" height="100" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="win-description text" mc:edit="win-description1">
+                                Office: ################<br>
+                                Offering: ##############<br>
+                                Contact: ##############
+                              </td>
+                            </tr>
+                          </table>
                         </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td align="center" valign="top" style="width:188px; padding-right:10px;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td align="center" valign="top" style="width:188px;">
-                          <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/a124f899-b4d6-47fd-9055-36f7b59d0118.png" alt="" width="188" height="200" style="width:188px; height:200px;" mc:label="three-photo-second" mc:edit="threephotosecond">
+                        <td align="center" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="win-image">
+                                <img src="images/win-logo_194x100.png" mc:edit="win-logo2" alt="Win logo" border="0" width="194" height="100"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="win-description text" mc:edit="win-description2">
+                                Office: ################<br>
+                                Offering: ##############<br>
+                                Contact: ##############
+                              </td>
+                            </tr>
+                          </table>
                         </td>
-                      </tr>
-                      <tr>
-                        <td align="center" valign="top" class="text padding-top-25 three-photo-description" mc:label="three-photo-description-2" mc:edit="threephotodescription2">
-                          <strong>Text center image</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim.
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td align="center" valign="top" style="width:188px; padding-right:10px;">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td align="center" valign="top" style="width:188px;">
-                          <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/a124f899-b4d6-47fd-9055-36f7b59d0118.png" alt="" width="188" height="200" style="width:188px; height:200px;" mc:label="three-photo-third" mc:edit="threephotothird">
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" valign="top" class="text padding-top-25 three-photo-description" mc:label="three-photo-description-3" mc:edit="threephotodescription3">
-                          <strong>Text right image</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim.
+                        <td align="center" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" valign="top" class="win-image">
+                                <img src="images/win-logo_194x100.png" mc:edit="win-logo3" alt="Win logo" border="0" width="194" height="100"/>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" class="win-description text" mc:edit="win-description3">
+                                Office: ################<br>
+                                Offering: ##############<br>
+                                Contact: ##############
+                              </td>
+                            </tr>
+                          </table>
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
+
               </table>
             </td>
           </tr>
