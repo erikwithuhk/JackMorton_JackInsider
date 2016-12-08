@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jack insider | Jack Morton</title>
 
+    <!--[if gte mso 9]>
+      <style>
+        li {
+            text-indent: -1em; /* Normalize space between bullets and text */
+        }
+      </style>
+    <![endif]-->
+
     <style type="text/css">
       /* =======================
       Reset Styles
@@ -14,6 +22,8 @@
     	body{
     		margin:0;
     		padding:0;
+        -webkit-text-size-adjust:100%;
+        -ms-text-size-adjust:100%;
     	}
     	img{
     		border:0 none;
@@ -22,6 +32,7 @@
     		line-height:100%;
     		outline:none;
     		text-decoration:none;
+        -ms-interpolation-mode:bicubic;
     	}
     	a img{
     		border:0 none;
@@ -51,15 +62,6 @@
     		mso-table-lspace:0pt;
     		mso-table-rspace:0pt;
     	}
-    	img{
-    		-ms-interpolation-mode:bicubic;
-    	}
-    	body{
-    		-webkit-text-size-adjust:100%;
-    	}
-    	body{
-    		-ms-text-size-adjust:100%;
-    	}
 
 
 
@@ -79,8 +81,10 @@
     		font-family: arial, sans-serif;
     		font-size: 1em;
     		margin-top: 0px;
+        Margin: 0;
     		margin-bottom: 0px;
     		padding-top: 0px;
+        padding-left: 0;
     		padding-bottom: 0px;
     	}
     	ol ul, ul ol {
@@ -102,13 +106,13 @@
     	}
       .text {
         color: #333d47;
-        mso-line-height-rule:exactly;
+        mso-line-height-rule: exactly;
         line-height: 1.5625em;
         -webkit-text-size-adjust:none;
       }
     	.preheader {
     		font-size: 10px;
-    		line-height: 1.5em;
+        line-height: 1.25em !important;
     		text-align: right !important;
     	}
     	.preheader a {
@@ -127,23 +131,24 @@
         width: 640px;
     	}
     	#body{
-    		background-color:#ffffff;
-    		padding-left:20px;
-    		padding-right:20px;
-    		padding-bottom:40px;
+    		background-color: #ffffff;
+    		padding-left: 20px;
+    		padding-right: 20px;
+    		padding-bottom: 20px;
     	}
     	.padding-top-25{
     		padding-top:25px;
     	}
       .section-header {
         color: #ff5000;
-        font-size: 1.5rem;
+        font-size: 24px;
         font-weight: bold;
       }
       .more-header {
         font-weight: bold;
       }
       .more-list {
+        list-style-type: disc;
         padding-left: 20px;
       }
       .more-link {
@@ -211,30 +216,29 @@
       }
       #footer {
         padding-top: 25px;
-        padding-right: 172px;
+        padding-right: 169px;
         padding-bottom: 25px;
-        padding-left: 172px;
+        padding-left: 170px;
       }
-      .follow-us,
       .social-link {
         padding-right: 10px;
+      }
+      .follow-us + .social-link {
+        padding-left: 10px;
       }
       .social-link:last-child {
         padding-right: 0;
       }
-      .follow-us {
+      .follow-us img {
         background-color: #ff5000;
         color: #ffffff;
         height: 23px;
-        width: 86px;
+        width: 91px;
       }
       .social-link,
       .social-link img {
         height: 20px;
         width: 20px;
-      }
-      .social-link img {
-        background-color: #ffffff;
       }
       .tracking-pixel {
         color: #abafb3;
@@ -259,7 +263,7 @@
             <td align="center" valign="top" id="preheader">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" class="preheader text">
+                  <td align="center" valign="top" class="preheader text" mc:edit="preheader">
                     Month YYYY<br />
                     <a target="_blank" href="*|ARCHIVE|*">View email in a browser</a>
                   </td>
@@ -288,8 +292,8 @@
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td align="center" valign="top" class="hero-image" mc:edit="hero-image">
-                          <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/40e4e9d6-cc93-4ee5-9c41-107ef68ce97a.png" alt="Hero image" border="0" width="600" height="250" />
+                        <td align="center" valign="top" class="hero-image">
+                          <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/40e4e9d6-cc93-4ee5-9c41-107ef68ce97a.png" alt="Hero image" border="0" width="600" height="250" mc:edit="hero-image" />
                         </td>
                       </tr>
                       <tr>
@@ -348,7 +352,7 @@
                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
                               <td align="center" valign="top" class="win-image">
-                                <img src="images/win-logo_194x100.png" mc:edit="win-logo3" alt="Win logo" border="0" width="194" height="100"/>
+                                <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/286162b5-d419-4b51-bde5-b37eeee8465b.png" mc:edit="win-logo3" alt="Win logo" border="0" width="194" height="100"/>
                               </td>
                             </tr>
                             <tr>
@@ -427,9 +431,8 @@
                       </tr>
                       <tr>
                         <td align="center" valign="top" class="text">
-                          <ul class="more-list" mc:edit="more-work">
-                            <li>Jack [Office] created the <a href="#" target="_blank">[Project Name]</a> for [Client Name].</li>
-                            <li>Jack [Office] created the <a href="#" target="_blank">[Project Name]</a> for [Client Name].</li>
+                          <ul class="more-list">
+                            <li mc:repeatable><span mc:edit="more-work">Jack [Office] created the <a href="#" target="_blank">[Project Name]</a> for [Client Name].</span></li>
                           </ul>
                         </td>
                       </tr>
@@ -504,9 +507,8 @@
                       </tr>
                       <tr>
                         <td align="center" valign="top" class="text">
-                          <ul class="more-list" mc:edit="more-press">
-                            <li>[Subject] was featured in <a href="#" target="_blank">[Outlet Name]</a> for [Interesting Thing].</li>
-                            <li>[Subject] was featured in <a href="#" target="_blank">[Outlet Name]</a> for [Interesting Thing].</li>
+                          <ul class="more-list">
+                            <li mc:repeatable><span mc:edit="more-press">[Subject] was featured in <a href="#" target="_blank">[Outlet Name]</a> for [Interesting Thing].</span></li>
                           </ul>
                         </td>
                       </tr>
@@ -575,10 +577,9 @@
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
-                        <td align="center" valign="top" class="text">
-                          <ul class="more-list padding-top-25" mc:edit="more-resources">
-                            <li><a href="#" target="_blank">[Resource Name]</a> [Resource Description].</li>
-                            <li><a href="#" target="_blank">[Resource Name]</a> [Resource Description].</li>
+                        <td align="center" valign="top" class="text padding-top-25">
+                          <ul class="more-list">
+                            <li mc:repeatable><span mc:edit="more-resources"><a href="#" target="_blank">[Resource Name]</a> [Resource Description].</span></li>
                           </ul>
                         </td>
                       </tr>
@@ -596,9 +597,8 @@
                       </tr>
                       <tr>
                         <td align="center" valign="top" class="text social-text">
-                          <ul class="more-list" mc:edit="best-of-social">
-                            <li>[Information] <a href="#" target="_blank">[Link]</a>.</li>
-                            <li>[Information] <a href="#" target="_blank">[Link]</a>.</li>
+                          <ul class="more-list">
+                            <li mc:repeatable><span mc:edit="social-text">[Information] <a href="#" target="_blank">[Link]</a>.</span></li>
                           </ul>
                         </td>
                       </tr>
@@ -607,13 +607,13 @@
                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
                               <td align="center" valign="top" class="social-photo">
-                                <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/e65b4232-e7db-473b-a8e6-150d5cf0d34b.png" alt="Instagram photo" border="0" height="194" width="194" />
+                                <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/e65b4232-e7db-473b-a8e6-150d5cf0d34b.png" alt="Instagram photo" border="0" height="194" width="194" mc:edit="instagram-1" />
                               </td>
                               <td align="center" valign="top" class="social-photo">
-                                <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/e65b4232-e7db-473b-a8e6-150d5cf0d34b.png" alt="Instagram photo" border="0" height="194" width="194" />
+                                <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/e65b4232-e7db-473b-a8e6-150d5cf0d34b.png" alt="Instagram photo" border="0" height="194" width="194" mc:edit="instagram-2" />
                               </td>
                               <td align="center" valign="top" class="social-photo">
-                                <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/e65b4232-e7db-473b-a8e6-150d5cf0d34b.png" alt="Instagram photo" border="0" height="194" width="194" />
+                                <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/e65b4232-e7db-473b-a8e6-150d5cf0d34b.png" alt="Instagram photo" border="0" height="194" width="194" mc:edit="instagram-3" />
                               </td>
                             </tr>
                           </table>
@@ -635,31 +635,28 @@
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
                         <td class="follow-us">
-                          <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/f9f3b894-72d9-4a55-8be5-234bd6234d0b.png" width="86" height="23" border="0" alt="Follow us">
+                          <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/4128a027-fa14-4c8d-a559-8c42f4571126.png" width="91" height="23" border="0" alt="Follow us">
                         </td>
                         <td class="social-link">
-                          <a href="http://www.jackmorton.com/blog" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/eccbeb0e-ec77-4892-ad8e-51650474c0aa.png" width="20" height="20" border="0" alt="Jack Blog"></a>
+                          <a href="https://www.linkedin.com/company/jack-morton-worldwide" target="_blank"><img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/be938083-7b64-497a-a738-277a33d4a547.png" width="20" height="20" border="0" alt="Instagram" style="display:block"></a>
                         </td>
                         <td class="social-link">
-                          <a href="http://twitter.com/jackmorton" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/874ffe17-adc3-438c-a277-c44fe289e053.png" width="20" height="20" border="0" alt="Twitter"></a>
+                          <a href="http://instagram.com/jackmorton" target="_blank"><img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/b93c0efd-bb6d-4711-8856-2c6e650b5177.png" width="20" height="20" border="0" alt="Instagram"></a>
                         </td>
                         <td class="social-link">
-                          <a href="http://www.facebook.com/jackmortonworldwide" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/e207230f-0a14-4e64-931c-3d8c23d82d71.png" width="20" height="20" border="0" alt="Facebook"></a>
+                          <a href="http://twitter.com/jackmorton" target="_blank"><img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/80a124cb-3a6b-455b-901f-1d7682b24cb1.png" width="20" height="20" border="0" alt="Twitter"></a>
                         </td>
                         <td class="social-link">
-                          <a href="http://www.slideshare.net/jackmortonWW" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/02f00088-c9b6-44db-ab07-5ead831cf228.png" width="20" height="20" border="0" alt="SlideShare"></a>
+                          <a href="http://www.facebook.com/jackmortonworldwide" target="_blank"><img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/6280d83f-262d-434f-adf4-87040040e065.png" width="20" height="20" border="0" alt="Facebook"></a>
                         </td>
                         <td class="social-link">
-                          <a href="http://instagram.com/jackmorton" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/bf150e2e-5af5-4c5a-8967-5c7e8e1ac91f.png" width="20" height="20" border="0" alt="Instagram"></a>
+                          <a href="http://vimeo.com/jackmortonww/videos" target="_blank"><img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/f62ae5a0-cb42-42ee-b3fb-40e2b5b7f0f2.png" width="20" height="20" border="0" alt="Vimeo"></a>
                         </td>
                         <td class="social-link">
-                          <a href="http://vimeo.com/jackmortonww/videos" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/83496e41-a820-4329-b358-c6e60ba41c31.png" width="20" height="20" border="0" alt="Vimeo"></a>
+                          <a href="http://www.jackmorton.com/" target="_blank"><img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/ebd1c7c0-ba21-4128-b95a-6f7417601849.png" width="20" height="20" border="0" alt="YouTube"></a>
                         </td>
                         <td class="social-link">
-                          <a href="http://www.youtube.com/JackMortonWW" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/c404c1cf-b313-471c-8600-28560e494180.png" width="20" height="20" border="0" alt="YouTube"></a>
-                        </td>
-                        <td class="social-link">
-                          <a href="http://www.pinterest.com/jackmorton" target="_blank"><img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/b17b7349-de1a-4dc9-b52a-036e60ccbe9b.png" width="20" height="20" border="0" alt="Pinterest"></a>
+                          <a href="http://www.jackmorton.com/blog" target="_blank"><img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/b4a78853-909d-4ac4-a611-ed3c6fe9d449.png" width="20" height="20" border="0" alt="Jack Blog"></a>
                         </td>
                       </tr>
                     </table>
