@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jack insider | Jack Morton</title>
 
-    <!--[if gte mso 9]>
-      <style>
-        li {
-            text-indent: -1em; /* Normalize space between bullets and text */
-        }
-      </style>
-    <![endif]-->
-
     <style type="text/css">
       /* =======================
       Reset Styles
@@ -44,10 +36,8 @@
     		border-collapse:collapse;
     	}
     	#bodyTable{
-    		height:100% !important;
     		margin:0;
     		padding:0;
-    		width:100% !important;
     	}
     	.ExternalClass{
     		width:100%;
@@ -80,24 +70,20 @@
     	ol, ul {
     		font-family: arial, sans-serif;
     		font-size: 1em;
-    		margin-top: 0px;
+        display: block;
+        list-style-type: disc;
         Margin: 0;
-    		margin-bottom: 0px;
-    		padding-top: 0px;
-        padding-left: 0;
-    		padding-bottom: 0px;
+        padding: 0;
     	}
-    	ol ul, ul ol {
-    		margin-top: 0px;
-    		margin-bottom: 0px;
-    		padding-top: 0px;
-    		padding-bottom: 0px;
-    	}
+      ol li, ul li {
+        Margin: 0;
+        padding: 0;
+      }
       #bodyTable {
         background-color: #e7e8e9;
       }
     	#emailContainer td {
-    		font-family:arial, helvetica, sans-serif;
+    		font-family: arial, helvetica, sans-serif;
         text-align: left;
     	}
     	#preheader {
@@ -112,12 +98,9 @@
       }
     	.preheader {
     		font-size: 10px;
-        line-height: 1.25em !important;
-    		text-align: right !important;
     	}
     	.preheader a {
         color: #333d47;
-    		font-weight: normal;
     		text-decoration: underline;
     	}
     	.header-image{
@@ -147,12 +130,11 @@
       .more-header {
         font-weight: bold;
       }
-      .more-list {
-        list-style-type: disc;
-        padding-left: 20px;
+      .more-list a {
+        font-weight: bold;
       }
       .more-link {
-        text-align: right !important;
+        font-weight: bold;
       }
       .hero-image {
         padding-top: 50px;
@@ -198,6 +180,7 @@
       .work-item__link,
       .press-item__link,
       .resource-item__link {
+        font-weight: bold;
         padding-top: 10px;
       }
       .social-text {
@@ -253,19 +236,19 @@
   </head>
 
 <body bgcolor="#e7e8e9">
-  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+  <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="height:100%; width:100%;">
     <tr>
       <td align="center" valign="top">
         <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" id="emailContainer">
 
           <!-- Content begins -->
           <tr>
-            <td align="center" valign="top" id="preheader">
+            <td align="right" valign="top" id="preheader">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td align="center" valign="top" class="preheader text" mc:edit="preheader">
+                  <td align="center" valign="top" class="preheader text" style="line-height:1.25em; text-align: right;" mc:edit="preheader">
                     Month YYYY<br />
-                    <a target="_blank" href="*|ARCHIVE|*">View email in a browser</a>
+                    <a target="_blank" href="*|ARCHIVE|*" style="font-weight:normal;">View email in a browser</a>
                   </td>
                 </tr>
               </table>
@@ -387,7 +370,7 @@
                             </tr>
                             <tr>
                               <td align="center" valign="top" class="work-item__link text" mc:edit="work-link_1">
-                                <a href="#" target="_blank">Client: Project</a>
+                                <strong><a href="#" target="_blank">Client: Project</a></strong>
                               </td>
                             </tr>
                             <tr>
@@ -406,7 +389,7 @@
                             </tr>
                             <tr>
                               <td align="center" valign="top" class="work-item__link text" mc:edit="work-link_2">
-                                <a href="#" target="_blank">Client: Project</a>
+                                <strong><a href="#" target="_blank">Client: Project</a></strong>
                               </td>
                             </tr>
                             <tr>
@@ -429,16 +412,14 @@
                           More work
                         </td>
                       </tr>
-                      <tr>
-                        <td align="center" valign="top" class="text">
-                          <ul class="more-list">
-                            <li mc:repeatable><span mc:edit="more-work">Jack [Office] created the <a href="#" target="_blank">[Project Name]</a> for [Client Name].</span></li>
-                          </ul>
+                      <tr mc:repeatable>
+                        <td align="center" valign="top" class="more-list text">
+                          <span mc:edit="more-work">&#8226; Jack [Office] created the <strong><a href="#" target="_blank">[Project Name]</a></strong> for [Client Name].</span>
                         </td>
                       </tr>
                       <tr>
-                        <td align="center" valign="top" class="more-link text padding-top-25">
-                          <a href="http://myjack.jackmorton.com/marketing/casestudies.aspx" target="_blank">See more work on MyJack</a>
+                        <td align="right" valign="top" class="more-link text padding-top-25" style="text-align:right;">
+                          <strong><a href="http://myjack.jackmorton.com/marketing/casestudies.aspx" target="_blank">See more work on MyJack</a></strong>
                         </td>
                       </tr>
                     </table>
@@ -463,7 +444,7 @@
                             </tr>
                             <tr>
                               <td align="center" valign="top" class="press-item__link text" mc:edit="press-link_1">
-                                <a href="#" target="_blank">Outlet: Headline</a>
+                                <strong><a href="#" target="_blank">Outlet: Headline</a></strong>
                               </td>
                             </tr>
                             <tr>
@@ -482,7 +463,7 @@
                             </tr>
                             <tr>
                               <td align="center" valign="top" class="press-item__link text" mc:edit="press-link_2">
-                                <a href="#" target="_blank">Outlet: Headline</a>
+                                <strong><a href="#" target="_blank">Outlet: Headline</a></strong>
                               </td>
                             </tr>
                             <tr>
@@ -505,16 +486,14 @@
                           More press
                         </td>
                       </tr>
-                      <tr>
-                        <td align="center" valign="top" class="text">
-                          <ul class="more-list">
-                            <li mc:repeatable><span mc:edit="more-press">[Subject] was featured in <a href="#" target="_blank">[Outlet Name]</a> for [Interesting Thing].</span></li>
-                          </ul>
+                      <tr mc:repeatable>
+                        <td align="center" valign="top" class="more-list text">
+                            <span mc:edit="more-press">&#8226; [Subject] was featured in <strong><a href="#" target="_blank">[Outlet Name]</a></strong> for [Interesting Thing].</span>
                         </td>
                       </tr>
                       <tr>
-                        <td align="center" valign="top" class="more-link text padding-top-25">
-                          <a href="http://www.jackmorton.com/news-coverage/" target="_blank">Read more press</a>
+                        <td align="right" valign="top" class="more-link text padding-top-25" style="text-align:right;">
+                          <strong><a href="http://www.jackmorton.com/news-coverage/" target="_blank">Read more press</a></strong>
                         </td>
                       </tr>
                     </table>
@@ -539,7 +518,7 @@
                             </tr>
                             <tr>
                               <td align="center" valign="top" class="resource-item__link text" mc:edit="resource-link_1">
-                                <a href="#" target="_blank">Resource name</a>
+                                <strong><a href="#" target="_blank">Resource name</a></strong>
                               </td>
                             </tr>
                             <tr>
@@ -558,7 +537,7 @@
                             </tr>
                             <tr>
                               <td align="center" valign="top" class="resource-item__link text" mc:edit="resource-link_2">
-                                <a href="#" target="_blank">Resource name</a>
+                                <strong><a href="#" target="_blank">Resource name</a></strong>
                               </td>
                             </tr>
                             <tr>
@@ -576,11 +555,9 @@
                 <tr mc:hideable>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td align="center" valign="top" class="text padding-top-25">
-                          <ul class="more-list">
-                            <li mc:repeatable><span mc:edit="more-resources"><a href="#" target="_blank">[Resource Name]</a> [Resource Description].</span></li>
-                          </ul>
+                      <tr mc:repeatable>
+                        <td align="center" valign="top" class="more-list text padding-top-25">
+                          <span mc:edit="more-resources">&#8226; <strong><a href="#" target="_blank">[Resource Name]</a></strong> [Resource Description].</span>
                         </td>
                       </tr>
                     </table>
@@ -595,11 +572,9 @@
                           Best of social
                         </td>
                       </tr>
-                      <tr>
-                        <td align="center" valign="top" class="text social-text">
-                          <ul class="more-list">
-                            <li mc:repeatable><span mc:edit="social-text">[Information] <a href="#" target="_blank">[Link]</a>.</span></li>
-                          </ul>
+                      <tr mc:repeatable>
+                        <td align="center" valign="top" class="more-list text social-text">
+                          <span mc:edit="social-text">&#8226; [Information] <strong><a href="#" target="_blank">[Link]</a></strong>.</span>
                         </td>
                       </tr>
                       <tr>
