@@ -135,6 +135,7 @@
         color: #ff5000;
         font-size: 24px;
         font-weight: bold;
+        width: 600px;
       }
       .more-header {
         font-weight: bold;
@@ -283,15 +284,15 @@
             <td align="center" valign="top" id="body">
               <table border="0" cellpadding="0" cellspacing="0" width="600">
 
-                <tr mc:hideable>
+                <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="hero-image">
                           <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/40e4e9d6-cc93-4ee5-9c41-107ef68ce97a.png" alt="Hero image" border="0" width="600" height="250" mc:edit="hero-image" />
                         </td>
                       </tr>
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="text padding-top-25"  mc:edit="hero-text">
                           <strong>Hero story</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim. In egestas rutrum nisl, vitae imperdiet nibh. Duis in tincidunt ipsum. Vestibulum sagittis elementum sodales. Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.<br>
                           <br>
@@ -302,15 +303,17 @@
                   </td>
                 </tr>
 
-                <tr mc:hideable>
+                <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="section-header text padding-top-25">
                           Wins
                         </td>
                       </tr>
-                      <tr class="wins-container">
+                    </table>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tr class="wins-container" mc:hideable>
                         <td align="center" valign="top">
                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
@@ -367,7 +370,7 @@
                 <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="section-header text padding-top-25">
                           Featured work
                         </td>
@@ -419,7 +422,7 @@
                 <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="more-header text padding-top-25">
                           More work
                         </td>
@@ -429,7 +432,7 @@
                           <span mc:edit="more-work">&#8226; Jack [Office] created the <strong><a href="#" target="_blank">[Project Name]</a></strong> for [Client Name].</span>
                         </td>
                       </tr>
-                      <tr>
+                      <tr mc:hideable>
                         <td align="right" valign="top" class="more-link text padding-top-25" style="text-align:right;">
                           <strong><a href="http://myjack.jackmorton.com/marketing/casestudies.aspx" target="_blank">See more work on MyJack</a></strong>
                         </td>
@@ -438,10 +441,10 @@
                   </td>
                 </tr>
 
-                <tr mc:hideable>
+                <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="section-header text padding-top-25">
                           Press
                         </td>
@@ -490,10 +493,10 @@
                   </td>
                 </tr>
 
-                <tr mc:hideable>
+                <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="more-header text padding-top-25">
                           More press
                         </td>
@@ -503,7 +506,7 @@
                             <span mc:edit="more-press">&#8226; [Subject] was featured in <strong><a href="#" target="_blank">[Outlet Name]</a></strong> for [Interesting Thing].</span>
                         </td>
                       </tr>
-                      <tr>
+                      <tr mc:hideable>
                         <td align="right" valign="top" class="more-link text padding-top-25" style="text-align:right;">
                           <strong><a href="http://www.jackmorton.com/news-coverage/" target="_blank">Read more press</a></strong>
                         </td>
@@ -512,10 +515,10 @@
                   </td>
                 </tr>
 
-                <tr mc:hideable>
+                <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="section-header text padding-top-25">
                           Resources
                         </td>
@@ -564,7 +567,7 @@
                   </td>
                 </tr>
 
-                <tr mc:hideable>
+                <tr>
                   <td align="center" valign="top" class="padding-top-25">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr mc:repeatable>
@@ -576,10 +579,10 @@
                   </td>
                 </tr>
 
-                <tr mc:hideable>
+                <tr>
                   <td align="center" valign="top">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="section-header text padding-top-25">
                           Best of social
                         </td>
@@ -589,7 +592,7 @@
                           <span mc:edit="social-text">&#8226; [Information] <strong><a href="#" target="_blank">[Link]</a></strong>.</span>
                         </td>
                       </tr>
-                      <tr>
+                      <tr mc:hideable>
                         <td align="center" valign="top" class="padding-top-25">
                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
